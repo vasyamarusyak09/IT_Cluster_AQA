@@ -1,0 +1,36 @@
+Bug №1
+Name:    Bug-WrUs
+Summary: The user does not see the form "Напишіть нам" on the contacts page 
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the item "Контакти" from the categories menu.  
+Actual result: The block "Напишіть нам" contains such an info "[contact-form-7 id=”115050″ title=”Контактна форма 1″]" against the form.
+Expected result: The block "Напишіть нам" contains the appropriate form.
+Environment: OS - Windows 10 Browser - Chrome 86.0.4240.198
+
+
+Bug №2
+Name:    Bug-SNet
+Summary: The social nets icons do not work properly on the "Суспільство" page.
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the item "Суспільство" from the categories menu. 
+	3 Click on the any ocial nets icons.  
+Actual result: The use is scrolled up.
+Expected result: The page with propriate social net is opened in a new tab.
+Environment: OS - Windows 10 Browser - Chrome 86.0.4240.198
+
+Bug №3
+Name:    Bug-DelCom
+Summary: The users comments are deleted after he clicked the button "Delete all my comments" on the page with his comments.
+Str:
+	1 Go to the link https://pravda.if.ua
+	2 Click on any news.  
+	3 Write any comment on the news page.
+	4 Click the icon "Person and a gear" above your comments.
+	5 Click the button "Delete all my comments" on the pop up window.
+	6 Click again the button "Delete all my comments" on the new pop up window.
+	7 Click the button "Clear cookies with my personal data" on the new pop up window.
+Actual result: The comments that the user added are not deleted.
+Expected result: The comments that the user added are deleted.
+Environment: OS - Windows 10 Browser - Chrome 86.0.4240.198

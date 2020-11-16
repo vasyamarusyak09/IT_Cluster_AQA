@@ -1,0 +1,70 @@
+Use cases
+1. The user Antonina can use the search and search any information that she wants.
+2. The user Antonina wants to see the most actual news on the main page of the site.
+3  The user Antonina wants to subscribe to the news notifications of this site.
+4  The user Antonina wants to use the calendar of the site and see the news of the appropriate date.
+5  The user Antonina should be able to like the sites' facebook page.
+
+The test cases for fifth use case.
+
+Test case №1
+
+Preconditons
+	The user has to be autorized in the facebook.
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the button "like page" with facebook icon
+	3.New pop-ap window is opened. 
+Expected result
+	The page is liked from the opened facebook page.
+
+
+Test case №2
+
+Preconditons
+	The user hasn't be autorized in the facebook.
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the button "like page" with facebook icon and click on the button.
+Expected result
+	New pop-ap window is opened with facebook autorized page. 
+
+
+Test case №3
+
+Preconditons
+	The user isn't registered on the facebook.
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the button "like page" with facebook icon and click on the button.
+	3 Pop up window is opened on the https://www.facebook.com/login.php page
+	4 The user click "Sign up" and creates a new account.
+Expected result
+	The user is on the Pravda.IF.UA facebook page after registration and the page is liked.
+
+
+Test case №4
+
+Preconditons
+	The user forgot the password to his facebook page.
+Str
+	1 Go to the link https://pravda.if.ua
+	2 Select the button "like page" with facebook icon and click on the button.
+	3 Pop up window is opened on the https://www.facebook.com/login.php page
+	4 The user click "Forgot password" and recover his password.
+Expected result
+	The user is on the Pravda.IF.UA facebook page after recovery his password and the page is liked.
+
+
+Test case №5
+
+Preconditons
+	The user uses phone with facebook app. Authorized into his account.
+Str
+	1 Go to the link https://pravda.if.ua via chrome browser/
+	2 Select the button "Like page" with facebook icon and click on the button.
+Expected result
+	The Pravda.IF.UA page is liked.
+
+
+
