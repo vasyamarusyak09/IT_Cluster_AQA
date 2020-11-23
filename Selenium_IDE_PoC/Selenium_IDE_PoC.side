@@ -1,0 +1,493 @@
+{
+  "id": "290cf5e0-ccdd-4816-aeae-eb65f19a2d1d",
+  "version": "2.0",
+  "name": "Selenium_IDE_PoC",
+  "url": "https://www.foxtrot.com.ua/",
+  "tests": [{
+    "id": "a26dac55-ee4a-4155-822f-9d52ac1b5b26",
+    "name": "test_2",
+    "commands": [{
+      "id": "e827264f-194e-48d5-b384-429af4241418",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.foxtrot.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d879f86-5eb4-4a2b-ac5b-cfaef9e9d872",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f1d8c96-bd99-461e-81ec-25cdc15ad810",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__categories",
+      "targets": [
+        ["css=.header__categories", "css:finder"],
+        ["xpath=//header/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23ff5de6-4a1b-45a9-bbd9-90011e2027e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog__category-item:nth-child(2) .catalog-sub__body-row:nth-child(2) > ul:nth-child(1) > li:nth-child(5) > a",
+      "targets": [
+        ["css=.catalog__category-item:nth-child(2) .catalog-sub__body-row:nth-child(2) > ul:nth-child(1) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'iPhone 11 Pro Max')])[10]", "xpath:link"],
+        ["xpath=//ul[@id='js-catalog-list']/li[2]/div[2]/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/shop/mobilnye_telefony_apple-iphone-11-pro-max.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f52d4f5-17b9-42a3-ad28-c2e5001de774",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iPhone 11 Pro Max",
+      "targets": [
+        ["linkText=iPhone 11 Pro Max", "linkText"],
+        ["css=.catalog__category-item:nth-child(2) .catalog-sub__body-row:nth-child(2) > ul:nth-child(1) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPhone 11 Pro Max')]", "xpath:link"],
+        ["xpath=//ul[@id='js-catalog-list']/li[2]/div[2]/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/shop/mobilnye_telefony_apple-iphone-11-pro-max.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iPhone 11 Pro Max')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "373d21bd-1a8d-4abd-b0df-480ed3091a96",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active .owl-lazy",
+      "targets": [
+        ["css=.active .owl-lazy", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i1.foxtrot.com.ua/product/offers_new/22723_ru.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='listing-page-container']/div/div/div/div/div/div/div/div[13]/a/img", "xpath:idRelative"],
+        ["xpath=//div[13]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67496e74-0051-4db8-946f-572f3c27d174",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active .owl-lazy",
+      "targets": [
+        ["css=.active .owl-lazy", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i1.foxtrot.com.ua/product/offers_new/22723_ru.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='listing-page-container']/div/div/div/div/div/div/div/div[13]/a/img", "xpath:idRelative"],
+        ["xpath=//div[13]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09658ade-04a7-469a-a30f-204cab68fe72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.desc-loaded .button",
+      "targets": [
+        ["css=.desc-loaded .button", "css:finder"],
+        ["xpath=//div[@id='listing-page-container']/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7414b4d3-5936-4567-a29d-a1b3e0458218",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8e682185-2cc7-42ac-b37d-d051bb4f1c67",
+    "name": "test_1",
+    "commands": [{
+      "id": "34f691d4-1818-40dd-9b19-e02145e3af9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.foxtrot.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b8eca8-9eeb-4403-88e5-a69e14162db8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37ac8e7a-3292-448c-a4f7-097f8230a99c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1289)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "674a6314-f22a-4d8c-a8fd-4a6bd71ae558",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2900)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4d45761-7e15-44d5-b88f-6224f15a9611",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,10601)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81dd9ca9-2c33-484e-8040-2d31243d9e10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scroll-top-button",
+      "targets": [
+        ["css=.scroll-top-button", "css:finder"],
+        ["xpath=//body/div[13]", "xpath:position"],
+        ["xpath=//div[contains(.,'ВВЕРХ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a14b61-4d65-44a7-8823-8ffe3c91a86c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "14b68800-3edc-4236-a034-7a61241c5db0",
+    "name": "test_3",
+    "commands": [{
+      "id": "fb4fb285-1784-435e-88b7-82f01b539746",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.foxtrot.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ec248b3-26a7-4fce-b993-8bada79b3967",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bca9a5-e4ce-474f-8ebc-e715f1ee820b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=УКР",
+      "targets": [
+        ["linkText=УКР", "linkText"],
+        ["css=.header__sub-lang > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'УКР')]", "xpath:link"],
+        ["xpath=//div[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'УКР')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d80e186a-f364-4d3a-9533-5fbb91060706",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4617)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2c12d31-2c29-491c-a18c-599e66c83691",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7bc29ad6-19f0-4759-b57a-bbcb8a3ded80",
+    "name": "test_4",
+    "commands": [{
+      "id": "78aadee4-559c-4110-a5ba-ca2c8609b995",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.foxtrot.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe480d7-95ac-4363-b993-42723e9c209c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bc4cd22-47fe-4adf-89ba-8a75ad7d7db1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#callbackFeature > p",
+      "targets": [
+        ["css=#callbackFeature > p", "css:finder"],
+        ["xpath=//div[@id='callbackFeature']/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'0 800 300-353')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f963df28-1ed7-492f-b1b8-3e94513524ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=mobile-menu-phone",
+      "targets": [
+        ["id=mobile-menu-phone", "id"],
+        ["name=callBackPhone", "name"],
+        ["css=.tooltip_active #mobile-menu-phone", "css:finder"],
+        ["xpath=//input[@id='mobile-menu-phone']", "xpath:attributes"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb22ce8b-61fb-407e-9a9f-fbc04a14fdb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobile-menu-phone",
+      "targets": [
+        ["id=mobile-menu-phone", "id"],
+        ["name=callBackPhone", "name"],
+        ["css=.tooltip_active #mobile-menu-phone", "css:finder"],
+        ["xpath=//input[@id='mobile-menu-phone']", "xpath:attributes"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": "+38(099) 222 33"
+    }, {
+      "id": "3d1d05fe-4eea-4e99-8479-caaba92f9de5",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobile-menu-phone",
+      "targets": [
+        ["id=mobile-menu-phone", "id"],
+        ["name=callBackPhone", "name"],
+        ["css=.tooltip_active #mobile-menu-phone", "css:finder"],
+        ["xpath=//input[@id='mobile-menu-phone']", "xpath:attributes"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": "+38(099) 222 33 44"
+    }, {
+      "id": "72522176-c788-4656-b554-e90d9f4bb266",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tooltip_active button",
+      "targets": [
+        ["css=.tooltip_active button", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "399ae3ee-3650-47cb-ba82-4431c244e0e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tooltip_active button",
+      "targets": [
+        ["css=.tooltip_active button", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c334b204-58b0-4e8a-b3d6-4269f641881a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#callback-thnks-popup .thnks-popup__wrap",
+      "targets": [
+        ["css=#callback-thnks-popup .thnks-popup__wrap", "css:finder"],
+        ["xpath=//div[@id='callback-thnks-popup']/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49dfb4df-7466-4826-99a7-3fd018f5293f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#callback-thnks-popup .popup__close > .icon",
+      "targets": [
+        ["css=#callback-thnks-popup .popup__close > .icon", "css:finder"],
+        ["xpath=//div[@id='callback-thnks-popup']/div/div/i", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff5fd916-52c3-47bf-be8f-f2b7c2b2469d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4cf09e89-78f9-455c-84a6-e118a8774c53",
+    "name": "test_5",
+    "commands": [{
+      "id": "3f197219-44f0-43cf-890d-0baf78d788d5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.foxtrot.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b564ff1-6a0a-4576-8080-844107101532",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1364x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efec0f60-c59b-4478-96aa-6e9b14ac2ed6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#callbackFeature > p",
+      "targets": [
+        ["css=#callbackFeature > p", "css:finder"],
+        ["xpath=//div[@id='callbackFeature']/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'0 800 300-353')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "307030c3-9bbf-440a-8b78-64175ea55b32",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=info@foxtrot.com.ua",
+      "targets": [
+        ["linkText=info@foxtrot.com.ua", "linkText"],
+        ["css=.tooltip_active .tooltip__contacts-email > a", "css:finder"],
+        ["xpath=//a[contains(text(),'info@foxtrot.com.ua')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mailto:info@foxtrot.com.ua')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@foxtrot.com.ua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4af70264-124d-4072-bf7f-5b5d10086d62",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=info@foxtrot.com.ua",
+      "targets": [
+        ["linkText=info@foxtrot.com.ua", "linkText"],
+        ["css=.tooltip_active .tooltip__contacts-email > a", "css:finder"],
+        ["xpath=//a[contains(text(),'info@foxtrot.com.ua')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mailto:info@foxtrot.com.ua')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@foxtrot.com.ua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0617ec01-2c08-4a3f-b4e5-811517fefa9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tooltip_active .button-link > label",
+      "targets": [
+        ["css=.tooltip_active .button-link > label", "css:finder"],
+        ["xpath=//div[4]/div/div[2]/div/div/div[2]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Адреса магазинов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f77f4e4-b529-4a3a-8fd9-dff3e8fac895",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-fox-stores-container",
+      "targets": [
+        ["id=select2-fox-stores-container", "id"],
+        ["css=#select2-fox-stores-container", "css:finder"],
+        ["xpath=//span[@id='select2-fox-stores-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "236cafb2-cbd1-46fb-b0cf-f429eca911f6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=(//input[@type='search'])[2]", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Калуш"
+    }, {
+      "id": "bde5092f-efc5-4ad0-997c-b8fc0ab8ac54",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.contact-page__box-wrap",
+      "targets": [
+        ["css=.contact-page__box-wrap", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "39,8753"
+    }, {
+      "id": "2d7444c2-8000-49b2-8e31-d5331a26af2a",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.contact-page__box-wrap",
+      "targets": [
+        ["css=.contact-page__box-wrap", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "39,8753"
+    }, {
+      "id": "cedcb074-9756-4816-b05e-9fb86c02d580",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.contact-page__box-wrap",
+      "targets": [
+        ["css=.contact-page__box-wrap", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "39,8753"
+    }, {
+      "id": "d30846f6-1553-4694-bc76-e799f7720455",
+      "comment": "",
+      "command": "click",
+      "target": "css=.contact-page__box-wrap",
+      "targets": [
+        ["css=.contact-page__box-wrap", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0a259b-ea10-4f52-b981-168a2aa801a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fox-content__stores_item > .fox-content__stores_item:nth-child(7) > .fox-content__stores_city",
+      "targets": [
+        ["css=.fox-content__stores_item > .fox-content__stores_item:nth-child(7) > .fox-content__stores_city", "css:finder"],
+        ["xpath=//div[23]/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ca9dc72-9686-447a-b894-5f8e1f9c33e8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1ad8fb06-f5d4-4a45-90c5-521528202942",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "56dfff59-a582-4fd0-a0d9-97d5520b529d",
+    "name": "Practical_Task",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a26dac55-ee4a-4155-822f-9d52ac1b5b26", "8e682185-2cc7-42ac-b37d-d051bb4f1c67", "14b68800-3edc-4236-a034-7a61241c5db0", "7bc29ad6-19f0-4759-b57a-bbcb8a3ded80", "4cf09e89-78f9-455c-84a6-e118a8774c53"]
+  }],
+  "urls": ["https://foxtrot.com/", "https://www.foxtrot.com.ua/"],
+  "plugins": []
+}
