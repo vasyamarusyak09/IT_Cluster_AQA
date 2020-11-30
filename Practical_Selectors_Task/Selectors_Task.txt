@@ -3,47 +3,47 @@ Test case №1
 Str
 	1 Go to the link https://www.foxtrot.com.ua/
 	2 Scroll down the page
-	3 Click on the button "Вверх" - /html/body/div[13] |||| div.scroll-top-button.active
+	3 Click on the button "Вверх" - /html/body/div[13] |||| //div[contains(@class,'scroll-top-button active')] |||| div.scroll-top-button.active
 Expected result
-	The page is scrolled up. The user see the logo "Фокстрот" - //img[contains(@alt,'foxtrot')] |||| div.header-logo > a > img
+	The page is scrolled up. The user see the logo "Фокстрот" - //img[contains(@alt,'foxtrot') |||| //img[@xpath='1' |||| div.header-logo > a > img
 
 Test case №2
 
 Str
-	1 Go to the link https://www.foxtrot.com.ua/
-	2 Click on the category "Смартфони"
-	3 Select the item Iphone11.
-	4 Select any from the goods on the page and click on the button "Купити"
+	1 Go to the link https://www.foxtrot.com.ua/ 
+	2 Click on the category "Смартфони"  - //ul[@class = 'header__categories-items smooth-scroll']/li[1] |||| //li[@class = 'js-hover-catalog-category' and contains(.,'Cмарт')] |||| .js-hover-catalog-category[data-category = '32014']
+	3 Select the item Iphone11. - |||| //a[@href='/ru/shop/mobilnye_telefony_apple-iphone-11.html']  |||| li[data-category = '32014'] > div.catalog-sub > div > div.catalog-sub__body.smooth-scroll > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a
+	4 Select any from the goods on the page and click on the button "Купити" -//p[@xpath='1'] |||| .card.js-card.isTracked.desc-loaded:nth-child(3) .card__buttons [data-id = "6510868"]>p
 Expected result
-	The button title is changed to "В корзині"
+	The button title is changed to "В корзині" //div[@class = 'card js-card isTracked desc-loaded'][1]//div[@data-title-in-the-card= 'В корзине']  |||| .card.js-card.isTracked.desc-loaded:nth-child(3) .card__buttons [data-title-in-the-card = "В корзине"]
 
 
 Test case №3
 
 Str
 	1 Go to the link https://www.foxtrot.com.ua/
-	2 Click on the button "УКР"
+	2 Click on the button "УКР"   //ul[@class = "header__sub-lang"]//a[@data-lang ="uk"] |||| //a[@data-lang='uk'][contains(.,'УКР')]  |||| .header__sub-lang li [data-lang = 'uk']
 Expected result
-	The language of the site is changed to ukrainian
+	The The language of the site is changed to ukrainian. The value of the button changed to "Знайти".  //input[@class = 'header-search__button evinent-search-button' and @value = "ЗНАЙТИ"] ||||  //input[@value='ЗНАЙТИ']    ||||input[class = 'header-search__button evinent-search-button']
 
 
 Test case №4
 
 Str
 	1 Go to the link https://www.foxtrot.com.ua/
-	2 Click on the category phone number "0 800 300-353"
-	3 Write the different numerical values in the field "Ваш номер телефону"
-	4 Click on the button "Передзвоніть мені"
+	2 Click on the category phone number "0 800 300-353"  //div[@id="callbackFeature"] |||| //div[@class = "header__sub-info"]//div[@class = "js-toggle-tooltip tooltip-link nowrap"] |||| #callbackFeature
+	3 Write the different numerical values in the field "Ваш номер телефону" //div[@class = 'tooltip tooltip_active']//input[@id =  'mobile-menu-phone'] |||| .tooltip.tooltip_active #mobile-menu-phone 
+	4 Click on the button "Передзвоніть мені" - //div[@class = 'tooltip tooltip_active']//button[@class =  'callback-submit'] |||| .tooltip.tooltip_active button.callback-submit
 Expected result
-	The thank's pop-up is appeared
+	The thank's pop-up is appeared - //span[@id = 'select2-fox-stores-container']  |||||  //div[@id = "callback-thnks-popup"]//span[@class = "thnks-popup__body-title"] |||| #callback-thnks-popup .thnks-popup__body-title
 
 
 Test case №5
 
 Str
-	1 Go to the link https://www.foxtrot.com.ua/
-	2 Click on the category phone number "0 800 300-353"
-	3 Click on the link "Адреси магазинів"
-	4 Write the value "Калуш" in the stores field. Click on the found result.
+	1 Go to the link https://www.foxtrot.com.ua/	
+	2 Click on the category phone number "0 800 300-353"  //div[@id="callbackFeature"] |||| //div[@class = "header__sub-info"]//div[@class = "js-toggle-tooltip tooltip-link nowrap"] |||| #callbackFeature
+	3 Click on the link "Адреси магазинів"  -- //div[@class = 'tooltip tooltip_active']//label[contains(text(),'Адреси магазинів')]   |||| .tooltip.tooltip_active .button-link.button-link_black.jslink label
+	4 Write the value "Калуш" in the stores field. Click on the found result. -- //span[@id = 'select2-fox-stores-container']  |||||   //span[@class = 'select2-selection__rendered'] |||| .select2-selection__rendered
 Expected result
-	The page is scrolled down to the appropriate result.
+	The page is scrolled down to the appropriate result. //div[@class = 'fox-content__stores_city']//span[contains(text(), "Калуш")]  |||| .fox-content__stores div:nth-child(27) > div.fox-content__stores_city > span
