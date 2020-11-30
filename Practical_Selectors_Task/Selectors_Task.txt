@@ -1,0 +1,49 @@
+Test case №1
+
+Str
+	1 Go to the link https://www.foxtrot.com.ua/
+	2 Scroll down the page
+	3 Click on the button "Вверх" - /html/body/div[13] |||| div.scroll-top-button.active
+Expected result
+	The page is scrolled up. The user see the logo "Фокстрот" - //img[contains(@alt,'foxtrot')] |||| div.header-logo > a > img
+
+Test case №2
+
+Str
+	1 Go to the link https://www.foxtrot.com.ua/
+	2 Click on the category "Смартфони"
+	3 Select the item Iphone11.
+	4 Select any from the goods on the page and click on the button "Купити"
+Expected result
+	The button title is changed to "В корзині"
+
+
+Test case №3
+
+Str
+	1 Go to the link https://www.foxtrot.com.ua/
+	2 Click on the button "УКР"
+Expected result
+	The language of the site is changed to ukrainian
+
+
+Test case №4
+
+Str
+	1 Go to the link https://www.foxtrot.com.ua/
+	2 Click on the category phone number "0 800 300-353"
+	3 Write the different numerical values in the field "Ваш номер телефону"
+	4 Click on the button "Передзвоніть мені"
+Expected result
+	The thank's pop-up is appeared
+
+
+Test case №5
+
+Str
+	1 Go to the link https://www.foxtrot.com.ua/
+	2 Click on the category phone number "0 800 300-353"
+	3 Click on the link "Адреси магазинів"
+	4 Write the value "Калуш" in the stores field. Click on the found result.
+Expected result
+	The page is scrolled down to the appropriate result.
